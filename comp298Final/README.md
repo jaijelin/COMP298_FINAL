@@ -10,3 +10,13 @@ These challenges/teams are useful bc we can slot them in here, but we can also s
 Overall, I think this should be applicable to the pokemon battler genre but also roguelite games where you have a team of guys (Wildfrost, Monster Train)
 
 I also want to have a world system. Like how in pokemon you can use your pokemon to interact with a world you as the player otherwise cannot affect. Or like pikmin. Or a little bit fnaf world too.
+
+win condition as catch specfic pokemon- we can team pre-set to save time
+
+player sprites: 
+Wolfang62-  https://www.deviantart.com/wolfang62/art/Leaf-Sprite-Overworld-887602743
+
+map sprites: 
+Segesi-  https://www.deviantart.com/segesi/gallery/46973780/maps-tiles-and-mock-ups
+
+zerudez-https://www.deviantart.com/zerudez/art/Public-Tileset-295115322
