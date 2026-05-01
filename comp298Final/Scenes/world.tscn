@@ -1,3 +1,9 @@
-[gd_scene format=3 uid="uid://2qyg25utpe0y"]
+[gd_scene load_steps=2 format=3 uid="uid://2qyg25utpe0y"]
+
+[ext_resource type="Texture2D" uid="uid://b0r2uotiasatl" path="res://Assets/Maps/d4v5rqy-8ece0765-93ac-4376-a8ab-118413009985.png" id="1_a02cp"]
 
 [node name="world" type="Node2D"]
+
+[node name="D4v5Rqy8Ece076593Ac4376A8Ab118413009985" type="Sprite2D" parent="."]
+position = Vector2(433, 395)
+texture = ExtResource("1_a02cp")
