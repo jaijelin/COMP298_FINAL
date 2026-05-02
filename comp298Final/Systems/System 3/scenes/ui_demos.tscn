@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://5p7ml183gapf"]
+
+[ext_resource type="PackedScene" uid="uid://cyiauj6jgknkx" path="res://Systems/System 3/scenes/pause_menu.tscn" id="1_5vbs3"]
+[ext_resource type="Script" uid="uid://bam1urq7lsrl4" path="res://Systems/System 3/scripts/ui_demos.gd" id="1_p1cwf"]
+
+[node name="UiDemos" type="Node2D"]
+script = ExtResource("1_p1cwf")
+
+[node name="PauseMenu" parent="." instance=ExtResource("1_5vbs3")]
+
+[node name="TestPauseButton" type="Button" parent="."]
+offset_left = 56.0
+offset_top = 283.0
+offset_right = 206.0
+offset_bottom = 314.0
+text = "Show pause menu"
+
+[node name="GameSpeedIndicator" type="Label" parent="."]
+offset_left = 222.0
+offset_top = 287.0
+offset_right = 262.0
+offset_bottom = 310.0
+
+[connection signal="pressed" from="TestPauseButton" to="." method="_on_test_pause_button_pressed"]
