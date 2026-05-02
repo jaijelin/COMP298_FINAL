@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=3 uid="uid://kxkq7t71pxnq"]
+
+[ext_resource type="Script" uid="uid://bicb14su7xete" path="res://Systems/System 3/scripts/main_menu.gd" id="1_7qb6i"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xsilq"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7qb6i")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_xsilq")
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 416
+theme_override_constants/margin_top = 475
+
+[node name="GridContainer" type="GridContainer" parent="PanelContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 64
+columns = 2
+
+[node name="StartButton" type="Button" parent="PanelContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(128, 64)
+layout_mode = 2
+text = "Start
+"
+
+[node name="QuitButton" type="Button" parent="PanelContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(128, 64)
+layout_mode = 2
+text = "Quit"
+
+[connection signal="pressed" from="PanelContainer/MarginContainer/GridContainer/QuitButton" to="." method="_on_quit_button_pressed"]
