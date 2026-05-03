@@ -1,7 +1,10 @@
-[gd_scene load_steps=15 format=3 uid="uid://c6onowkidpcq3"]
+[gd_scene load_steps=18 format=3 uid="uid://c6onowkidpcq3"]
 
 [ext_resource type="Script" uid="uid://lecr5keyu6mr" path="res://Systems/System 1/scripts/base_ally.gd" id="1_lms5c"]
 [ext_resource type="Texture2D" uid="uid://ct7hp2se2lqx3" path="res://Assets/HisNameIsFNAF_spritesheet.png" id="2_mpe21"]
+[ext_resource type="PackedScene" uid="uid://owo377bm86ic" path="res://Systems/System 1/scripts/moves/bite.tscn" id="3_kqevk"]
+[ext_resource type="PackedScene" uid="uid://c50dh42u6ykt3" path="res://Systems/System 1/scripts/moves/mega_bite.tscn" id="4_6plxf"]
+[ext_resource type="PackedScene" uid="uid://bk5plu7n376lj" path="res://Systems/System 1/scripts/moves/leer.tscn" id="5_eb27o"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xauk8"]
 atlas = ExtResource("2_mpe21")
@@ -88,13 +91,23 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="HisNameIsFnaf" type="CharacterBody2D"]
+[node name="HisNameIsFnaf" type="CharacterBody2D" node_paths=PackedStringArray("move_1", "move_2", "move_3")]
 script = ExtResource("1_lms5c")
+move_1 = NodePath("Bite")
+move_2 = NodePath("MegaBite")
+move_3 = NodePath("Leer")
+attack_cooldown = 6
 metadata/_custom_type_script = "uid://lecr5keyu6mr"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(-1, 1)
 sprite_frames = SubResource("SpriteFrames_2s0rr")
 autoplay = "default"
-frame_progress = 0.32336512
+frame_progress = 0.31600246
 speed_scale = 4.0
+
+[node name="Bite" parent="." instance=ExtResource("3_kqevk")]
+
+[node name="MegaBite" parent="." instance=ExtResource("4_6plxf")]
+
+[node name="Leer" parent="." instance=ExtResource("5_eb27o")]

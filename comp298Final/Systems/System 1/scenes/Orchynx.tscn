@@ -335,11 +335,12 @@ animations = [{
 
 [node name="Orchynx" type="CharacterBody2D"]
 script = ExtResource("1_7se0f")
+type = 2
 metadata/_custom_type_script = "uid://lecr5keyu6mr"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(-3, 3)
 sprite_frames = SubResource("SpriteFrames_q3wpe")
 autoplay = "default"
-frame_progress = 0.030357167
+frame_progress = 0.4840559
 speed_scale = 3.0

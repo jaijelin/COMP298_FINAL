@@ -11,8 +11,6 @@ enum Type {
 
 @export var type: Type = Type.ATTACKER
 
-#add_to_group("Weapon")
-
 @export var health: int = 100:
 	set(new_health):
 		if new_health <= 0:

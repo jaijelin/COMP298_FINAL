@@ -37,7 +37,7 @@ func _ready() -> void:
 	for i in range(4):
 		var spriteCopy
 		for child in Team.team[i].get_children():
-			if child is AnimatedSprite2D or Sprite2D:
+			if (child is AnimatedSprite2D) or (child is Sprite2D):
 				spriteCopy = child.duplicate()
 		ally_positions[i].add_child(spriteCopy)
 	
@@ -46,6 +46,14 @@ func _ready() -> void:
 	enemy_side_thread = Thread.new()
 	ally_side_thread = Thread.new()
 
+# some ideas for tomorrow
+# make the move select ui
+# make an index var
+# process should, if there move select ui isn't visible, increment the index and check if it is ready to attack
+# now, as for the move being sent into the queue
+# you click a button in the move select ui
+# the ui grabs pareent (battle manager) and sends it the move
+# there should prolly be a function within battle manager to package that movee and send it to the right thread 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

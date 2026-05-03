@@ -1,7 +1,17 @@
 extends BaseCharacter
 class_name BaseAlly
 
-var moves = []
+
+@export var move_1: BaseMove
+@export var move_2: BaseMove
+@export var move_3: BaseMove
+
+@onready var moves = [
+	move_1,
+	move_2,
+	move_3
+]
+
 
 var attack_ready: bool = false
 
