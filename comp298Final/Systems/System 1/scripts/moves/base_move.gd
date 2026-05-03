@@ -23,4 +23,3 @@ class_name BaseMove
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	sender = get_parent()
-	print(sender)
