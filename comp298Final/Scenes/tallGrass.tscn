@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://pqayqglb080j"]
 
-[ext_resource type="Script" uid="uid://damewdaydidj6" path="res://Scenes/grass.gd" id="1_on02d"]
+[ext_resource type="Script" uid="uid://damewdaydidj6" path="res://Scripts/grass.gd" id="1_on02d"]
 [ext_resource type="Texture2D" uid="uid://vobvmkwkc00d" path="res://Assets/Maps/public_tileset_by_zerudez_d4vpcfu-fullview.png" id="2_qm417"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qruad"]
