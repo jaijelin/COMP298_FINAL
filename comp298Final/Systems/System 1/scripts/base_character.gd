@@ -2,6 +2,8 @@ extends CharacterBody2D
 class_name BaseCharacter
 
 
+@onready var moveset: Array[BaseMove] = []
+
 enum Type {
 	ATTACKER,
 	HEALER,
@@ -43,13 +45,24 @@ var time_since_attack = 0
 		else:
 			attack = new_attack
 
+var attack_ready: bool = false
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	for move in moveset:
+		move._ready()
 
-func _physics_process(delta: float) -> void:
+func _process(delta: float) -> void:
 	time_since_attack += 1*delta
+	if time_since_attack >= attack_cooldown:
+		attack_ready = true
+
+func reset_cooldown() -> void:
+	time_since_attack = 0
+	attack_ready = false
 
 # will be overriden based on enemy or ally
+# but basically it should turn them into a tombstone
+# and make it so they can't be healed back to life
 func die() -> void:
 	pass

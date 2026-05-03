@@ -1,7 +1,8 @@
-[gd_scene load_steps=50 format=3 uid="uid://c2rhxb8dsnof5"]
+[gd_scene load_steps=51 format=3 uid="uid://c2rhxb8dsnof5"]
 
 [ext_resource type="Script" uid="uid://lecr5keyu6mr" path="res://Systems/System 1/scripts/base_ally.gd" id="1_7se0f"]
 [ext_resource type="Texture2D" uid="uid://dmhya7htuouae" path="res://Assets/Orchynx_spritesheet.png" id="2_7wn54"]
+[ext_resource type="PackedScene" uid="uid://bk5plu7n376lj" path="res://Systems/System 1/scripts/moves/leer.tscn" id="3_caifi"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_caifi"]
 atlas = ExtResource("2_7wn54")
@@ -333,8 +334,11 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Orchynx" type="CharacterBody2D"]
+[node name="Orchynx" type="CharacterBody2D" node_paths=PackedStringArray("move_1", "move_2", "move_3")]
 script = ExtResource("1_7se0f")
+move_1 = NodePath("Leer")
+move_2 = NodePath("Leer2")
+move_3 = NodePath("Leer3")
 type = 2
 metadata/_custom_type_script = "uid://lecr5keyu6mr"
 
@@ -342,5 +346,11 @@ metadata/_custom_type_script = "uid://lecr5keyu6mr"
 scale = Vector2(-3, 3)
 sprite_frames = SubResource("SpriteFrames_q3wpe")
 autoplay = "default"
-frame_progress = 0.4840559
+frame_progress = 0.5785017
 speed_scale = 3.0
+
+[node name="Leer" parent="." instance=ExtResource("3_caifi")]
+
+[node name="Leer2" parent="." instance=ExtResource("3_caifi")]
+
+[node name="Leer3" parent="." instance=ExtResource("3_caifi")]

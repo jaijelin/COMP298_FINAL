@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://jk1sybfl5e7f"]
+[gd_scene load_steps=5 format=3 uid="uid://jk1sybfl5e7f"]
 
 [ext_resource type="Script" uid="uid://cx6cc4ehv0mcj" path="res://Systems/System 2/scripts/battle_manager.gd" id="1_kpu1j"]
 [ext_resource type="Texture2D" uid="uid://nbqm73hv4skp" path="res://Assets/battle background.png" id="2_mct16"]
+[ext_resource type="PackedScene" uid="uid://dk71k5v6074ry" path="res://Systems/System 3/scenes/move_select_ui.tscn" id="2_siliw"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cqh2w"]
 texture = ExtResource("2_mct16")
@@ -14,6 +15,10 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_kpu1j")
+metadata/_edit_lock_ = true
+
+[node name="MoveSelectUI" parent="." instance=ExtResource("2_siliw")]
+position = Vector2i(16, 16)
 
 [node name="Background" type="PanelContainer" parent="."]
 layout_mode = 1
@@ -23,6 +28,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_cqh2w")
+metadata/_edit_lock_ = true
 
 [node name="EnemyPos1" type="Marker2D" parent="."]
 position = Vector2(912, 249)
@@ -46,4 +52,6 @@ position = Vector2(387, 485)
 position = Vector2(674, 530)
 
 [node name="AllyPos4" type="Marker2D" parent="."]
-position = Vector2(885, 604)
+position = Vector2(913, 556)
+
+[connection signal="index_pressed" from="MoveSelectUI" to="." method="_on_move_select_ui_index_pressed"]

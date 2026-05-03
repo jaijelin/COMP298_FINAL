@@ -17,7 +17,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-Team="*res://Systems/System 1/scripts/team.gd"
+Team="*res://Systems/System 1/scenes/team.tscn"
 
 [input]
 

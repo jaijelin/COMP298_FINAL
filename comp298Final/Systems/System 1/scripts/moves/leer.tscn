@@ -4,6 +4,8 @@
 
 [node name="Leer" type="Node"]
 script = ExtResource("1_0dfbs")
-power = 20
+power = 10
 aoe = true
+targets_health = false
+targets_defense = true
 metadata/_custom_type_script = "uid://cxatlx82e8upm"
