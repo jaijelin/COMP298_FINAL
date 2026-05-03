@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://c50dh42u6ykt3"]
+
+[ext_resource type="Script" uid="uid://cxatlx82e8upm" path="res://Systems/System 1/scripts/moves/base_move.gd" id="1_nip1e"]
+
+[node name="MegaBite" type="Node"]
+script = ExtResource("1_nip1e")
+power = 60
+reflective = true
+metadata/_custom_type_script = "uid://cxatlx82e8upm"

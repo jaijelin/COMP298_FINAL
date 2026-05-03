@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bk5plu7n376lj"]
+
+[ext_resource type="Script" uid="uid://cxatlx82e8upm" path="res://Systems/System 1/scripts/moves/base_move.gd" id="1_0dfbs"]
+
+[node name="Leer" type="Node"]
+script = ExtResource("1_0dfbs")
+power = 20
+aoe = true
+metadata/_custom_type_script = "uid://cxatlx82e8upm"

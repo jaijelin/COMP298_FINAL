@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://ddnnvlq3mawcs"]
+
+[ext_resource type="Script" uid="uid://lecr5keyu6mr" path="res://Systems/System 1/scripts/base_ally.gd" id="1_0a46b"]
+[ext_resource type="Texture2D" uid="uid://cbw0cci8h5d60" path="res://icon.svg" id="1_ma36d"]
+
+[node name="BaseAlly" type="CharacterBody2D"]
+script = ExtResource("1_0a46b")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ma36d")
