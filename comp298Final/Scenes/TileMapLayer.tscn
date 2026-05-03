@@ -3433,7 +3433,6 @@ texture = ExtResource("1_bdfyi")
 9:20/0 = 0
 10:20/0 = 0
 11:20/0 = 0
-12:20/0 = 0
 13:20/0 = 0
 14:20/0 = 0
 15:20/0 = 0
@@ -4048,6 +4047,12 @@ texture = ExtResource("1_bdfyi")
 13:40/0 = 0
 14:40/0 = 0
 15:40/0 = 0
+12:21/0 = 0
+22:10/next_alternative_id = 3
+22:10/0 = 0
+22:10/1 = 1
+22:10/2 = 2
+12:20/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_udju8"]
 sources/8 = SubResource("TileSetAtlasSource_udju8")
