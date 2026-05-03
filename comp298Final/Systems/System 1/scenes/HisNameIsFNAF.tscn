@@ -1,0 +1,100 @@
+[gd_scene load_steps=15 format=3 uid="uid://c6onowkidpcq3"]
+
+[ext_resource type="Script" uid="uid://lecr5keyu6mr" path="res://Systems/System 1/scripts/base_ally.gd" id="1_lms5c"]
+[ext_resource type="Texture2D" uid="uid://ct7hp2se2lqx3" path="res://Assets/HisNameIsFNAF_spritesheet.png" id="2_mpe21"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xauk8"]
+atlas = ExtResource("2_mpe21")
+region = Rect2(0, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_74ual"]
+atlas = ExtResource("2_mpe21")
+region = Rect2(251, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kqevk"]
+atlas = ExtResource("2_mpe21")
+region = Rect2(502, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6plxf"]
+atlas = ExtResource("2_mpe21")
+region = Rect2(753, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eb27o"]
+atlas = ExtResource("2_mpe21")
+region = Rect2(1004, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eqkg2"]
+atlas = ExtResource("2_mpe21")
+region = Rect2(1255, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pqajd"]
+atlas = ExtResource("2_mpe21")
+region = Rect2(1506, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_33e6h"]
+atlas = ExtResource("2_mpe21")
+region = Rect2(1757, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y82id"]
+atlas = ExtResource("2_mpe21")
+region = Rect2(2008, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l6ry6"]
+atlas = ExtResource("2_mpe21")
+region = Rect2(2259, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_88512"]
+atlas = ExtResource("2_mpe21")
+region = Rect2(2510, 0, 250, 250)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2s0rr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xauk8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_74ual")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kqevk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6plxf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eb27o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eqkg2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pqajd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_33e6h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y82id")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l6ry6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_88512")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="HisNameIsFnaf" type="CharacterBody2D"]
+script = ExtResource("1_lms5c")
+metadata/_custom_type_script = "uid://lecr5keyu6mr"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(-1, 1)
+sprite_frames = SubResource("SpriteFrames_2s0rr")
+autoplay = "default"
+frame_progress = 0.32336512
+speed_scale = 4.0

@@ -1,0 +1,49 @@
+[gd_scene load_steps=4 format=3 uid="uid://jk1sybfl5e7f"]
+
+[ext_resource type="Script" uid="uid://cx6cc4ehv0mcj" path="res://Systems/System 2/scripts/battle_manager.gd" id="1_kpu1j"]
+[ext_resource type="Texture2D" uid="uid://nbqm73hv4skp" path="res://Assets/battle background.png" id="2_mct16"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cqh2w"]
+texture = ExtResource("2_mct16")
+
+[node name="BattleManager" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kpu1j")
+
+[node name="Background" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_cqh2w")
+
+[node name="EnemyPos1" type="Marker2D" parent="."]
+position = Vector2(912, 249)
+
+[node name="EnemyPos2" type="Marker2D" parent="."]
+position = Vector2(614, 261)
+
+[node name="EnemyPos3" type="Marker2D" parent="."]
+position = Vector2(756, 316)
+
+[node name="EnemyPos4" type="Marker2D" parent="."]
+position = Vector2(1046, 296)
+
+[node name="AllyPos1" type="Marker2D" parent="."]
+position = Vector2(155, 587)
+
+[node name="AllyPos2" type="Marker2D" parent="."]
+position = Vector2(387, 485)
+
+[node name="AllyPos3" type="Marker2D" parent="."]
+position = Vector2(674, 530)
+
+[node name="AllyPos4" type="Marker2D" parent="."]
+position = Vector2(885, 604)
