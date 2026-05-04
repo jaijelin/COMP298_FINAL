@@ -1,8 +1,9 @@
-[gd_scene load_steps=27 format=3 uid="uid://c6x6hsr6yu4i6"]
+[gd_scene load_steps=28 format=3 uid="uid://c6x6hsr6yu4i6"]
 
 [ext_resource type="Script" uid="uid://dkoag3dttiuq6" path="res://main scripts/player.gd" id="1_6t5aa"]
 [ext_resource type="Texture2D" uid="uid://bgn0ymncv55qk" path="res://Assets/characters/dctg7fr-88b18dca-d227-4556-9f25-30816b128362.png" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://wwhy8ao3hxnv" path="res://Assets/characters/deogenr-c0bd11cf-3a22-4099-8b83-132fbf02459c.png" id="2_6t5aa"]
+[ext_resource type="PackedScene" uid="uid://cyiauj6jgknkx" path="res://Systems/System 3/scenes/pause_menu.tscn" id="4_0x0o5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vgqql"]
 atlas = ExtResource("1_cvnsp")
@@ -200,3 +201,14 @@ shape = SubResource("RectangleShape2D_cvnsp")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 scale = Vector2(-2.6188908, 0.9575668)
+
+[node name="PauseMenu" parent="." instance=ExtResource("4_0x0o5")]
+
+[node name="TestPauseButton" type="Button" parent="."]
+offset_left = 404.0
+offset_top = -311.0
+offset_right = 554.0
+offset_bottom = -280.0
+text = "Show pause menu"
+
+[connection signal="pressed" from="TestPauseButton" to="." method="_on_test_pause_button_pressed"]

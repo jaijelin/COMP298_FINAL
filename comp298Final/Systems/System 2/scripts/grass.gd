@@ -21,7 +21,7 @@ func _process(delta: float) -> void:
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	#anim_player.play("Stepped")
-	
+	print("grass")
 	if body.name == "player" or body.is_in_group("Player"):
 		_check_enemy_spawn()
 

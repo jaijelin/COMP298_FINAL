@@ -7,6 +7,7 @@ signal player_stoped_moving
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 @export var speed = 400 # Speed in pixels/sec
+@onready var pause_menu: PopupPanel = $PauseMenu
 
 
 func _physics_process(_delta: float) -> void:
@@ -37,4 +38,6 @@ func _physics_process(_delta: float) -> void:
 	# Handles movement and collisions
 	move_and_slide()
 	
-	
+
+func _on_test_pause_button_pressed() -> void:
+	pause_menu.visible = true
