@@ -20,4 +20,7 @@ func _process(delta: float) -> void:
 
 func die() -> void:
 	super.die()
-	
+	for child in get_children():
+		if child is AnimatedSprite2D or child is Sprite2D:
+			child.modulate = Color.GRAY
+			child.scale *= 0.5

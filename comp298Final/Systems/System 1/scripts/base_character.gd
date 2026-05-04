@@ -46,16 +46,22 @@ var time_since_attack = 0
 			attack = new_attack
 
 var attack_ready: bool = false
+var is_dead: bool = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	for move in moveset:
-		move._ready()
+	# Only process moveset if it has items
+	if moveset.size() > 0:
+		for move in moveset:
+			if move and move.has_method("_ready"):
+				move._ready()
 
 func _process(delta: float) -> void:
-	time_since_attack += 1*delta
-	if time_since_attack >= attack_cooldown:
-		attack_ready = true
+	if not is_dead:
+		time_since_attack += 1*delta
+		if time_since_attack >= attack_cooldown:
+			attack_ready = true
+
 
 func reset_cooldown() -> void:
 	time_since_attack = 0
@@ -65,4 +71,4 @@ func reset_cooldown() -> void:
 # but basically it should turn them into a tombstone
 # and make it so they can't be healed back to life
 func die() -> void:
-	pass
+	is_dead = true

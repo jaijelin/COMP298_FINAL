@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=4 uid="uid://2qyg25utpe0y"]
 
 [ext_resource type="Texture2D" uid="uid://b0r2uotiasatl" path="res://Assets/Maps/d4v5rqy-8ece0765-93ac-4376-a8ab-118413009985.png" id="1_a02cp"]
-[ext_resource type="PackedScene" uid="uid://c6x6hsr6yu4i6" path="res://Scenes/player.tscn" id="2_go701"]
-[ext_resource type="PackedScene" uid="uid://cwramho18uu14" path="res://Scenes/wall.tscn" id="3_5a7ea"]
-[ext_resource type="PackedScene" uid="uid://c0scbuwwpqied" path="res://Scenes/TileMapLayer.tscn" id="4_8j60k"]
-[ext_resource type="PackedScene" uid="uid://pqayqglb080j" path="res://Scenes/tallGrass.tscn" id="5_fo5ed"]
+[ext_resource type="PackedScene" uid="uid://c6x6hsr6yu4i6" path="res://main scenes/player.tscn" id="2_go701"]
+[ext_resource type="PackedScene" uid="uid://cwramho18uu14" path="res://main scenes/wall.tscn" id="3_5a7ea"]
+[ext_resource type="PackedScene" uid="uid://c0scbuwwpqied" path="res://main scenes/TileMapLayer.tscn" id="4_8j60k"]
+[ext_resource type="PackedScene" uid="uid://pqayqglb080j" path="res://Systems/System 2/scenes/tallGrass.tscn" id="5_fo5ed"]
 
 [node name="world" type="Node2D"]
 
@@ -25,1249 +25,1600 @@ tile_map_data = PackedByteArray("AAAAAGkACQAGAAkAAAAAAGoACQAGAAoAAAAAAGsACQAGAAs
 position = Vector2(166.00002, 11)
 rotation = 1.5727258
 scale = Vector2(6.416998, -1.1659614)
+metadata/_edit_lock_ = true
 
 [node name="wall2" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(263.5418, -64.09919)
 rotation = 1.5712185
 scale = Vector2(8.326495, -0.12276061)
 skew = -0.04411769
+metadata/_edit_lock_ = true
 
 [node name="wall3" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(-0.16816354, 35.162384)
 rotation = 1.5712185
 scale = Vector2(8.023252, -0.12565105)
 skew = -0.04411769
+metadata/_edit_lock_ = true
 
 [node name="wall4" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(14.816084, 1300.3744)
 scale = Vector2(1.6981716, 0.9921674)
+metadata/_edit_lock_ = true
 
 [node name="wall5" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(16.882284, -148.19643)
 rotation = 1.5711468
 scale = Vector2(0.47027493, -4.0926113)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall6" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(248.7718, 282.23987)
 rotation = -1.5704458
 scale = Vector2(1.7481625, 3.1621637)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall7" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(221.17073, -110.86293)
 rotation = 1.5711468
 scale = Vector2(0.18818364, -1.4487516)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall8" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(252.69202, 212.81073)
 rotation = 1.5711468
 scale = Vector2(0.16004281, 2.5342088)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall9" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(251.82594, 460.6661)
 rotation = 1.5711468
 scale = Vector2(0.5558578, 2.5342088)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall10" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(232.17018, 518.77844)
 rotation = 1.5711468
 scale = Vector2(0.18371797, 2.4672549)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall11" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(233.89554, 487.06326)
 rotation = 1.5711468
 scale = Vector2(0.05884519, 0.2796771)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall12" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(179.47794, 1019.0942)
 rotation = 3.1266453
 scale = Vector2(0.02311735, 3.790587)
 skew = 0.0144536495
+metadata/_edit_lock_ = true
 
 [node name="wall13" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(227.83936, 870.37415)
 rotation = 1.5704821
 scale = Vector2(0.099438176, 0.36131313)
 skew = -0.00920105
+metadata/_edit_lock_ = true
 
 [node name="wall14" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(216.85602, 1083.8157)
 rotation = 1.5704821
 scale = Vector2(0.033089776, 0.37353024)
 skew = -0.00920105
+metadata/_edit_lock_ = true
 
 [node name="wall15" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(243.02913, 660.4082)
 rotation = 1.5704821
 scale = Vector2(0.28141063, 4.3420835)
 skew = -0.00920105
+metadata/_edit_lock_ = true
 
 [node name="wall16" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(264.69485, 1092.0426)
 rotation = 1.5711468
 scale = Vector2(0.9666872, -2.8185244)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall17" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(210.43274, 1180.6635)
 rotation = 1.5711468
 scale = Vector2(0.7170802, 5.278235)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall18" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(197.09521, 996.98193)
 rotation = 1.5711468
 scale = Vector2(0.3977758, -1.6970108)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall19" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(186.02296, 574.89417)
 rotation = 1.5711468
 scale = Vector2(0.30978453, -1.9014146)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall20" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(151.98158, 771.7952)
 rotation = 1.5711468
 scale = Vector2(0.11373909, -9.330197)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall21" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(202.34451, 692.56744)
 rotation = 1.5711468
 scale = Vector2(0.11134272, -0.91433567)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall22" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(189.97125, 869.97217)
 rotation = 1.5711468
 scale = Vector2(0.038371604, -0.7772961)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall23" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(186.46815, 194.09659)
 rotation = 1.5711468
 scale = Vector2(0.18151174, -1.7622838)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall24" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(123.874626, 932.73737)
 rotation = 1.5711468
 scale = Vector2(0.13853738, 0.7313044)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall25" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(124.52442, 857.27)
 rotation = 1.5711468
 scale = Vector2(0.07878476, -0.94271666)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall26" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(132.40259, 1055.4736)
 rotation = 1.5711468
 scale = Vector2(0.12013357, -1.5964885)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall27" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(108.935104, 873.3999)
 rotation = 1.5711468
 scale = Vector2(0.31220353, -1.6036539)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall28" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(83.071175, 859.4027)
 rotation = 1.5711468
 scale = Vector2(0.25681713, 2.0691173)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall29" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(86.10071, 1108.1571)
 rotation = 1.5711468
 scale = Vector2(0.03434638, 0.79599166)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall30" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(82.76192, 852.53815)
 rotation = 1.5711468
 scale = Vector2(0.087005645, -2.2263906)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall31" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(8.632046, 1603.9213)
 rotation = 1.5711468
 scale = Vector2(-1.2640244, 1.7763939)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall32" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(9.986204, 408.35358)
 rotation = 1.5711468
 scale = Vector2(0.46633348, 3.1165578)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall33" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(49.549263, 463.66418)
 rotation = 1.5711468
 scale = Vector2(0.17281625, -1.9880856)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall34" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(15.177269, 714.59436)
 rotation = 1.5711468
 scale = Vector2(0.25681713, 2.0691173)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall35" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(14.38224, 1204.3115)
 rotation = 1.5711468
 scale = Vector2(0.25681713, 2.0691173)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall36" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(26.830765, 1256.7611)
 rotation = 1.5711468
 scale = Vector2(0.25681713, 2.0691173)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall37" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(48.881203, 1035.7183)
 rotation = 1.5711468
 scale = Vector2(0.10087515, -0.9129304)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall38" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(61.028275, 1059.004)
 rotation = 1.5711468
 scale = Vector2(0.111775495, -0.41512752)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall39" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(85.45564, 725.63257)
 rotation = 1.5711468
 scale = Vector2(0.25681713, 2.0691173)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall40" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(81.96281, 464.86603)
 rotation = 1.5711468
 scale = Vector2(0.29689026, 1.9277519)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall41" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(81.92453, 129.51938)
 rotation = 1.5711468
 scale = Vector2(0.18168734, 1.8341568)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall42" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(128.45743, -137.5773)
 rotation = 1.5711468
 scale = Vector2(0.18168734, 1.8341568)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall43" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(131.36778, 6.5409546)
 rotation = 1.5711468
 scale = Vector2(0.24779755, 1.9077187)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall44" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(149.92578, -31.856796)
 rotation = 1.5711468
 scale = Vector2(0.13250159, 0.58707756)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall45" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(136.37207, 401.11902)
 rotation = 1.5711468
 scale = Vector2(0.30638877, -1.6585901)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall46" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(83.73743, 292.49457)
 rotation = 1.5711468
 scale = Vector2(0.051280502, 0.6108599)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall47" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(43.78866, 3.8956375)
 rotation = 1.5711468
 scale = Vector2(0.2511722, 0.8243289)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall48" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(53.56333, 126.64522)
 rotation = 1.5711468
 scale = Vector2(0.031185703, 0.3124144)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall49" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(53.220085, 216.69618)
 rotation = 1.5711468
 scale = Vector2(0.031185703, 0.3124144)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall50" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(53.917694, 4.86084)
 rotation = 1.5711468
 scale = Vector2(0.031185703, 0.3124144)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall51" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(108.24908, 163.24776)
 rotation = 1.5711468
 scale = Vector2(0.018718813, 0.3124144)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall52" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(102.151634, 219.78877)
 rotation = 1.5711468
 scale = Vector2(0.06296215, 0.50757277)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall53" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(104.79971, 667.51697)
 rotation = 1.5711468
 scale = Vector2(0.026099531, -0.470332)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall54" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(125.03613, 731.199)
 rotation = 1.5711468
 scale = Vector2(0.031185703, 0.3124144)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall55" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(141.18143, 907.1912)
 rotation = 1.5711468
 scale = Vector2(0.031185703, 0.3124144)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall56" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(162.842, 909.1366)
 rotation = 1.5711468
 scale = Vector2(0.019438768, 0.15090108)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall57" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(198.5731, 337.4548)
 rotation = 1.5711468
 scale = Vector2(0.031185703, 0.53510386)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall58" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(190.07309, 134.9561)
 rotation = 1.5711468
 scale = Vector2(0.018718813, 0.3124144)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall59" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(178.56259, 73.93983)
 rotation = 1.5711468
 scale = Vector2(0.019969132, 0.1526118)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall60" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(162.34515, 103.7858)
 rotation = 1.5711468
 scale = Vector2(0.016071144, 0.2629633)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall61" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(149.45387, 425.27252)
 rotation = 1.5711468
 scale = Vector2(0.03325249, 0.69356024)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall62" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(159.88403, 456.25916)
 rotation = 1.5711468
 scale = Vector2(0.03325249, 0.69356024)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall63" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(156.98285, 1174.9498)
 rotation = 1.5711468
 scale = Vector2(0.031185703, 0.3124144)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall64" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(173.85281, 1061.9174)
 rotation = 1.5711468
 scale = Vector2(0.048172522, 0.97450215)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall65" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(173.01352, 1233.441)
 rotation = 1.5711468
 scale = Vector2(0.06292254, 0.8809893)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall66" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(-14.424091, 248.56905)
 rotation = 1.5711468
 scale = Vector2(0.21645984, 2.8054988)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="wall67" parent="walls" instance=ExtResource("3_5a7ea")]
 position = Vector2(45.904297, 636.8734)
 rotation = 1.5711468
 scale = Vector2(0.21642946, 0.39017507)
 skew = 0.010267854
+metadata/_edit_lock_ = true
 
 [node name="tallGrass" parent="." instance=ExtResource("5_fo5ed")]
 position = Vector2(383, 351)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass2" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1, 33)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass3" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1, 66)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass4" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-33, -1)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass5" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-33, 32)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass6" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-33, 66)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass7" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-65, 64)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass8" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-66, 30)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass9" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-101, 1)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass10" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-101, 30)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass11" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-98, 66)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass12" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-133, 36)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass13" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-167, 37)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-131, 70)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass14" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-166, 70)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass15" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-199, 71)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass16" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-201, 100)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass17" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-168, 102)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass18" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-133, 100)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass19" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-99, 100)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass20" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-171, 135)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass21" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-140, 135)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass22" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-106, 135)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass23" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-103, 281)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass24" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-171, 315)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass25" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-138, 315)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass26" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-104, 314)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass27" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-70, 314)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass28" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-37, 313)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass29" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-3, 312)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass30" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-207, 347)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass31" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-175, 346)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass32" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-141, 346)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass33" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-108, 348)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass34" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-71, 349)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass35" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-206, 380)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass36" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-172, 382)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass37" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-136, 381)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass38" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-107, 380)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass39" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-73, 380)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass40" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-38, 379)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass41" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(0, 346)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass42" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-2, 377)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass43" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(280, 348)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass44" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(315, 349)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass45" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(352, 348)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass46" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(384, 346)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass47" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(246, 384)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass48" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(278, 383)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass49" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(313, 380)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass50" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(348, 381)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass51" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(382, 381)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass52" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(417, 384)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass53" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(452, 383)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass54" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(484, 383)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass55" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(518, 384)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass56" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(315, 625)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass57" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(347, 626)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass58" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(381, 625)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass59" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(414, 625)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass60" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(349, 658)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass61" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(383, 657)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass62" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(418, 657)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass63" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(449, 622)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass64" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(453, 654)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass65" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(485, 623)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass66" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(485, 652)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass67" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(521, 624)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass68" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(519, 656)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass69" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(554, 625)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass70" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-135, 663)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass71" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-101, 660)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass72" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-68, 662)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass73" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-170, 695)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass74" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-135, 696)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass75" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-68, 692)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass76" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-35, 695)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass77" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-3, 694)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass78" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(32, 694)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass79" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(66, 695)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass80" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-206, 732)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass81" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-171, 733)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass82" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-136, 729)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass83" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-209, 764)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass84" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-173, 768)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass85" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-208, 800)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass86" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-174, 801)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass87" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-207, 833)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass88" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-174, 833)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass89" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-211, 866)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass90" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-176, 865)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass91" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-170, 936)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass92" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-137, 935)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass93" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-139, 902)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass94" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-142, 867)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass95" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-139, 832)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass96" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-138, 763)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass97" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-103, 725)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass98" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-102, 760)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass99" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-104, 795)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass100" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-103, 832)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass101" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-106, 869)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass102" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-105, 899)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass103" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-103, 933)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass104" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-105, 970)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass105" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-70, 969)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass106" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-71, 933)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass107" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-70, 899)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass108" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-69, 725)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass109" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-67, 759)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass110" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-67, 798)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass111" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-66, 834)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass112" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-34, 725)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass113" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-207, 899)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass114" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-172, 900)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass115" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-32, 762)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass116" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-33, 932)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass117" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-32, 896)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass118" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-32, 866)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass119" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-33, 832)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass120" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-33, 797)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass121" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(454, 938)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass122" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(588, 1005)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass123" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(456, 1006)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass124" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(454, 973)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass125" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(420, 975)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass126" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(550, 936)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass127" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(517, 937)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass128" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(486, 937)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass129" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(622, 1006)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass130" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(489, 972)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass131" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(489, 972)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass132" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(554, 1005)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass133" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(519, 1004)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass134" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(489, 1006)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass135" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(421, 1008)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass136" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(552, 970)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass137" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(519, 971)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass138" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-35, 968)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass139" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(63, 972)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass140" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(31, 972)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass141" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(32, 938)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass142" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-3, 937)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass143" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(-3, 970)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass144" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(64, 941)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass145" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(101, 940)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass146" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1010, 1010)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass147" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1009, 1041)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass148" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1080, 1042)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass149" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1012, 1072)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass150" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(978, 1072)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass151" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(976, 1014)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass152" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(981, 1043)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass153" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(941, 1012)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass154" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1021, 1111)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass155" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1119, 1115)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass156" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1087, 1115)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass157" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1084, 1075)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass158" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1047, 1076)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass159" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1053, 1113)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass160" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1117, 1075)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass161" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1114, 1043)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass162" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1426, 1359)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass163" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1459, 1357)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass164" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1495, 1359)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass165" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1149, -71)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass166" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1148, -38)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass167" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1117, -72)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass168" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1119, -37)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass169" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(626, 73)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass170" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(595, 72)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass171" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(560, 70)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass172" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(587, 31)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass173" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(557, 38)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass174" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(554, 5)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass175" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(529, 70)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass176" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(492, 72)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass177" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(457, 73)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass178" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(422, 72)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass179" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(525, 32)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass180" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(525, 2)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass181" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1009, -140)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass2" parent="tallGrass/tallGrass181" instance=ExtResource("5_fo5ed")]
 position = Vector2(-210, 142)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass5" parent="tallGrass/tallGrass181" instance=ExtResource("5_fo5ed")]
 position = Vector2(-71, 209)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass6" parent="tallGrass/tallGrass181" instance=ExtResource("5_fo5ed")]
 position = Vector2(-103, 208)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass7" parent="tallGrass/tallGrass181" instance=ExtResource("5_fo5ed")]
 position = Vector2(-136, 206)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass8" parent="tallGrass/tallGrass181" instance=ExtResource("5_fo5ed")]
 position = Vector2(-106, 171)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass9" parent="tallGrass/tallGrass181" instance=ExtResource("5_fo5ed")]
 position = Vector2(-138, 171)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass10" parent="tallGrass/tallGrass181" instance=ExtResource("5_fo5ed")]
 position = Vector2(-142, 138)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass11" parent="tallGrass/tallGrass181" instance=ExtResource("5_fo5ed")]
 position = Vector2(-175, 139)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass182" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1044, -140)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass183" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1080, -141)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass184" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1116, -110)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass185" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1116, -139)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass186" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1151, -139)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass187" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1151, -106)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass188" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1187, -107)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass189" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1186, -75)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass190" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1252, 103)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass2" parent="tallGrass/tallGrass190" instance=ExtResource("5_fo5ed")]
 position = Vector2(-2, 33)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass3" parent="tallGrass/tallGrass190" instance=ExtResource("5_fo5ed")]
 position = Vector2(-32, 35)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass4" parent="tallGrass/tallGrass190" instance=ExtResource("5_fo5ed")]
 position = Vector2(4, 282)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass5" parent="tallGrass/tallGrass190" instance=ExtResource("5_fo5ed")]
 position = Vector2(1, 251)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass6" parent="tallGrass/tallGrass190" instance=ExtResource("5_fo5ed")]
 position = Vector2(2, 220)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass7" parent="tallGrass/tallGrass190" instance=ExtResource("5_fo5ed")]
 position = Vector2(-2, 188)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass8" parent="tallGrass/tallGrass190" instance=ExtResource("5_fo5ed")]
 position = Vector2(1, 158)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass9" parent="tallGrass/tallGrass190" instance=ExtResource("5_fo5ed")]
 position = Vector2(1, 129)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass10" parent="tallGrass/tallGrass190" instance=ExtResource("5_fo5ed")]
 position = Vector2(0, 96)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass11" parent="tallGrass/tallGrass190" instance=ExtResource("5_fo5ed")]
 position = Vector2(0, 61)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass191" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1213, 178)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass192" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1185, 275)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass193" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1188, 243)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass194" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1184, 207)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass195" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1185, 172)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass196" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1219, 336)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass197" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1219, 298)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass198" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1219, 268)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass199" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1218, 234)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass200" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1217, 199)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass201" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1184, 309)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass202" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1150, 486)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass203" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1250, 693)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass204" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1218, 662)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass205" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1217, 629)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass206" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1217, 593)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass207" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1217, 558)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass208" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1250, 629)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass209" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1252, 659)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass210" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1114, 1010)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass211" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1078, 1011)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass212" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1042, 1010)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass213" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1148, 521)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass214" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1079, 624)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass215" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1045, 625)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass216" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1080, 592)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass217" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1116, 591)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass218" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1184, 589)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass219" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1150, 587)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass220" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1182, 553)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass221" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1145, 551)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass222" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1183, 519)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass223" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1115, 625)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass224" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1117, 696)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass225" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1082, 694)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass226" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1047, 691)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass227" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1183, 660)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass228" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1112, 660)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass229" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1079, 657)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass230" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1044, 659)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass231" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1182, 627)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass232" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1148, 623)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass233" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1150, 698)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass234" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1183, 764)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass235" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1120, 765)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass236" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1179, 732)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass237" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1146, 731)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass238" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1113, 728)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass239" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1079, 728)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass240" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1216, 694)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass241" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1183, 695)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass242" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(1156, 765)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass243" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(803, 521)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass244" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(804, 727)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass245" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(807, 694)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass246" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(806, 656)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass247" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(868, 625)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass248" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(836, 622)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass249" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(805, 621)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass250" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(837, 589)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass251" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(805, 589)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass252" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(808, 556)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass253" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(841, 659)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass254" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(841, 659)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass255" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(838, 763)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass256" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(902, 725)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass257" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(868, 725)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass258" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(836, 725)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass259" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(897, 688)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass260" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(868, 690)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass261" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(902, 661)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass262" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(869, 660)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass263" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(875, 761)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass264" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(905, 763)
+metadata/_edit_lock_ = true
 
 [node name="tallGrass265" parent="tallGrass" instance=ExtResource("5_fo5ed")]
 position = Vector2(905, 797)
+metadata/_edit_lock_ = true
